@@ -5,7 +5,12 @@ void main() {
   runApp(
     MaterialApp(
       title: 'Quizzler !!',
-      home: FirstScreen(),
+      home: Builder(
+        builder: (context) {
+          return FirstScreen();
+        }
+      ),
+
     ),
   );
 }

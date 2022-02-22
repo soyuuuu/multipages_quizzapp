@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multipages_quizzapp/dice.dart';
 import 'quiz_brain.dart';
 import 'result_page.dart';
 
@@ -60,8 +61,7 @@ class _QuizPageState extends State<QuizPage> {
           ));
         }
         quizBrain.reset();
-        //TODO : ศึกษาตัวอย่างการใช้ Navigator.push ไปยัง ResultPage() โดยต้องส่งคะแนนรวมไปให้ด้วย
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage(score: totalScore.toString())));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => DicePage(score: totalScore.toInt())));
       }
       else {
         if (correctAnswer == userAns) {
