@@ -6,9 +6,9 @@ class QuizBrain {
   //TODO 2: ปรับเปลี่ยนหรือเพิ่มชุดคำถามใน questionBank
   List<Question> _questionBank=[
     Question(q: '1 + 1 = 2', a: true),
-    Question(q: 'น้ำเงิน+เขียว = ส้ม', a: false),
-    Question(q: 'ทองเป็นอโลหะ', a: false),
-    Question(q: 'TOI13 จัดที่ MWIT', a: true),
+    Question(q: '2 + 3 = 6', a: false),
+    Question(q: '4 - 1 = 5', a: false),
+    Question(q: '5 - 2 = 3', a: true),
   ];
 
   void nextQuestion() {
